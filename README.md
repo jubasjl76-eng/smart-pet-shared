@@ -17,6 +17,20 @@ Git-tag dependency (this repo is public; no registry auth):
 (`gitTags` datasource) raises the bump PRs. Also published to GitHub Packages by
 `release.yml`.
 
+## OpenAPI registry (`@jubasjl76-eng/shared/openapi`)
+
+```ts
+import { createOpenApiRegistry } from '@jubasjl76-eng/shared/openapi';
+export const { apiRoute, buildOpenApiDoc, docsHtml } = createOpenApiRegistry({
+  title: 'Sensors Service API',
+});
+```
+
+`apiRoute(spec)` returns an Express-compatible middleware that validates the
+request with zod AND records the route; `buildOpenApiDoc()` emits the 3.1 doc
+(zod v4 `z.toJSONSchema`). Every service gets its own isolated registry; the
+shared `429` / `Idempotency-Key` / pagination components come for free.
+
 ## Config contract
 
 Every service declares ONE zod schema over `process.env`, in three sections by
