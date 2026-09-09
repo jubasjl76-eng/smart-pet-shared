@@ -1,0 +1,3 @@
+# Repo owner for PR review routing (see smart-pet-docs/REPOSITORIES.md).
+# Claude-owned. Contract/shared PRs merge + publish before consumer bumps.
+* @jubasjl76-eng
