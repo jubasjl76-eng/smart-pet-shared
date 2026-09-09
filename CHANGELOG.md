@@ -2,6 +2,13 @@
 
 All notable changes to `@jubasjl76-eng/shared`.
 
+## 0.2.0 — 2026-09-10
+
+- `@jubasjl76-eng/shared/openapi` — `createOpenApiRegistry({ title, servers, … })`
+  → `{ apiRoute, buildOpenApiDoc, docsHtml }`. The lightweight zod OpenAPI
+  registry, shared by every Smart Pet HTTP service (Phase 14, A1). Typed
+  structurally, no `express` dependency.
+
 ## 0.1.0 — 2026-09-09
 
 - First release. Hardening Phase 12 (A8): the **typed config contract**.

@@ -1,6 +1,6 @@
 {
   "name": "@jubasjl76-eng/shared",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Shared TypeScript for the Smart Pet services: the typed config-contract loader (and, from Phase 14, zod domain schemas + formatters)",
   "type": "module",
   "license": "UNLICENSED",
@@ -24,10 +24,17 @@
       "types": "./dist/config.d.ts",
       "default": "./dist/config.js"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./openapi": {
+      "types": "./dist/openapi.d.ts",
+      "default": "./dist/openapi.js"
+    }
   },
   "sideEffects": false,
-  "files": ["dist", "CHANGELOG.md"],
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
   "engines": {
     "node": ">=20"
   },
