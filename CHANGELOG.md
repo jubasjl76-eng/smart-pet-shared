@@ -2,6 +2,13 @@
 
 All notable changes to `@jubasjl76-eng/shared`.
 
+## 0.2.1 — 2026-09-10
+
+- `createOpenApiRegistry` — `docsHtml` now loads Scalar from a **version-pinned**
+  jsdelivr URL (`@scalar/api-reference@1.68.0/dist/browser/standalone.js`) with a
+  `sha384` **SRI** hash + `crossorigin` (Phase 18 — a repointed `latest` can no
+  longer run arbitrary JS on `/docs`).
+
 ## 0.2.0 — 2026-09-10
 
 - `@jubasjl76-eng/shared/openapi` — `createOpenApiRegistry({ title, servers, … })`

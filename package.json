@@ -1,6 +1,6 @@
 {
   "name": "@jubasjl76-eng/shared",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Shared TypeScript for the Smart Pet services: the typed config-contract loader (and, from Phase 14, zod domain schemas + formatters)",
   "type": "module",
   "license": "UNLICENSED",
